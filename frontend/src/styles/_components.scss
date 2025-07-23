@@ -80,7 +80,6 @@
   flex-direction: column;
   background-color: $color-bg-dark;
   overflow: hidden;
-  box-shadow: 0 0 0.625rem rgba($color-primary, 0.2);
   transition: filter 0.3s ease;
   border: 5px solid $color-bg-dark;
 
@@ -116,9 +115,10 @@
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 50vh);
+    grid-template-rows: repeat(3, 45vh);
     grid-auto-flow: row;
     justify-items: center;
+    box-shadow: 0 0 0.625rem rgba($color-primary, 0.2);
 
     @include respond-to(desktop) {
       grid-template-rows: repeat(3, 40vh);
@@ -128,7 +128,7 @@
       grid-template-rows: repeat(4, 45vh);
     }
     @include respond-to(mobile) {
-      grid-template-rows: repeat(6, 30vh);
+      grid-template-rows: repeat(2, 30vh);
     }
 
   }
@@ -234,6 +234,7 @@
   &__posicion {
     font-size: 2rem;
     text-align: center;
+    margin: 0 0 0 .8rem;
   }
 }
 
