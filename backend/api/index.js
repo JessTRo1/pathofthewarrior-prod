@@ -7,7 +7,7 @@ const app = express();
 
 // Permite solicitudes desde tu frontend en Vercel
 app.use(cors({
-  origin: 'https://pathofthewarrior-frontend-dev.vercel.app',
+  origin: 'https://pathofthewarrior-prod-h9wc.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
