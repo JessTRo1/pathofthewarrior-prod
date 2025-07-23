@@ -121,7 +121,7 @@
     box-shadow: 0 0 0.625rem rgba($color-primary, 0.2);
 
     @include respond-to(desktop) {
-      grid-template-rows: repeat(3, 40vh);
+      grid-template-rows: repeat(3, 45vh);
     }
     @include respond-to(tablet) {
       grid-template-columns: repeat(2, 1fr);
