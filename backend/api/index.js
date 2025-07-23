@@ -13,7 +13,6 @@ app.use(cors({
 }));
 
 // Middleware
-app.use(express.json());
 app.use(express.json({ limit: '5mb' })); 
 
 // Conexión a MongoDB Atlas
